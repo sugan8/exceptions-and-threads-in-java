@@ -1,0 +1,13 @@
+public class main{
+    static void checkage(int age){
+        if(age<18){
+throw new ArithmeticException("Access denied - You must be at least 18 years old.");
+        }
+        else{
+            System.out.println("age is greater than 18 he can access");
+        }
+        }
+        public static void main (String args[]){
+            checkage(22);
+    }
+}
