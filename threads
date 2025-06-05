@@ -1,0 +1,25 @@
+//threads using extens keyword
+public class Main extends Thread{
+    public static void main(String args[]){
+        Main thread =new Main();
+        thread.start();
+         System.out.println("The thread started running");
+    }
+    public void run(){
+        System.out.println("the code is running on thread");
+    }
+}
+//threads using implements keyword
+public class Main implements Runnable{
+    public static void main(String args[]){
+        Main obj =new Main();
+        Thread thread=new Thread(obj);
+        thread.start();
+         System.out.println("The thread started running");
+    }
+    public void run(){
+        System.out.println("the code is running on thread");
+    }
+}
+
+
